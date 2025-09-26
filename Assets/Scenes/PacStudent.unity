@@ -9069,20 +9069,12 @@ PrefabInstance:
       value: Animation Examples
       objectReference: {fileID: 0}
     - target: {fileID: 3207132187846572613, guid: 4ecb76bc9f8124758907971ab15b719a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3207132187846572613, guid: 4ecb76bc9f8124758907971ab15b719a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3207132187846572613, guid: 4ecb76bc9f8124758907971ab15b719a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.81
+      value: -22.45
       objectReference: {fileID: 0}
     - target: {fileID: 3207132187846572613, guid: 4ecb76bc9f8124758907971ab15b719a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.72
+      value: 6.83
       objectReference: {fileID: 0}
     - target: {fileID: 3207132187846572613, guid: 4ecb76bc9f8124758907971ab15b719a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9187,16 +9179,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4970091803438125066, guid: 822398365eaf54a9ca2af4ac6a5a3234, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970091803438125066, guid: 822398365eaf54a9ca2af4ac6a5a3234, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970091803438125066, guid: 822398365eaf54a9ca2af4ac6a5a3234, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.79
+      value: -11.8
       objectReference: {fileID: 0}
     - target: {fileID: 4970091803438125066, guid: 822398365eaf54a9ca2af4ac6a5a3234, type: 3}
       propertyPath: m_LocalPosition.y
