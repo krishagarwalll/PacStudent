@@ -768,7 +768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8602335289988376352}
   m_Layer: 0
-  m_Name: Cat
+  m_Name: Ghost (Cat)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3415,7 +3415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8258009840581936299}
   m_Layer: 0
-  m_Name: Mouse
+  m_Name: PacStudent (Ghost)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
