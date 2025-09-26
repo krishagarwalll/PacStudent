@@ -28,8 +28,14 @@ public class AudioManager : MonoBehaviour
         {
             musicSource.spatialBlend = 0f;
             musicSource.loop = false;
+            musicSource.mute = false;
         }
-
+        if (sfxSource != null)
+        {
+            sfxSource.spatialBlend = 0f;
+            sfxSource.mute = false;
+            sfxSource.loop = false;
+        }
         if (sceneMode == Mode.StartScene) PlayStartSceneLoop();
         else PlayIntroThenNormal();
     }
@@ -37,29 +43,34 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         if (sceneMode != Mode.LevelScene || musicSource == null || introSwitched) return;
-
         bool introFinished = !musicSource.isPlaying;
         bool threeSecondsElapsed = (Time.time - introStartTime) >= 3f;
-
         if (introFinished || threeSecondsElapsed)
         {
             introSwitched = true;
             PlayLoop(bgmNormal);
         }
     }
-
-    public void PlayNormalLoop()    => PlayLoop(bgmNormal);
-    public void PlayScaredLoop()    => PlayLoop(bgmScared);
-    public void PlayDeadGhostLoop() => PlayLoop(bgmDeadGhost);
-
-    public void PlayMove(bool eating)
+    
+    public void StartMoveLoop(bool eating)
     {
-        var clip = eating ? sfxEatPellet : sfxMoveNotEating;
-        PlaySfx(clip);
+        var src = sfxSource != null ? sfxSource : musicSource;
+        if (src == null) return;
+        var clip = sfxMoveNotEating;
+        if (clip == null) return;
+        if (src.clip != clip) src.clip = clip;
+        src.loop = true;
+        if (!src.isPlaying) src.Play();
     }
 
-    public void PlayWallHit() => PlaySfx(sfxWallHit);
-    public void PlayDeath()   => PlaySfx(sfxDeath);
+    public void StopMoveLoop()
+    {
+        var src = sfxSource != null ? sfxSource : musicSource;
+        if (src == null) return;
+        if (src.isPlaying && src.clip == sfxMoveNotEating) src.Stop();
+        src.loop = false;
+        src.clip = null;
+    }
 
     void PlayStartSceneLoop()
     {
@@ -73,9 +84,7 @@ public class AudioManager : MonoBehaviour
     {
         introSwitched = false;
         introStartTime = Time.time;
-
         if (musicSource == null) return;
-
         if (bgmIntro != null)
         {
             musicSource.loop = false;
