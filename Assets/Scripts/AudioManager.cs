@@ -51,17 +51,7 @@ public class AudioManager : MonoBehaviour
             PlayLoop(bgmNormal);
         }
     }
-
-    public void PlayNormalLoop()    => PlayLoop(bgmNormal);
-    public void PlayScaredLoop()    => PlayLoop(bgmScared);
-    public void PlayDeadGhostLoop() => PlayLoop(bgmDeadGhost);
-
-    public void PlayMove(bool eating)
-    {
-        var clip = eating ? sfxEatPellet : sfxMoveNotEating;
-        PlaySfx(clip);
-    }
-
+    
     public void StartMoveLoop(bool eating)
     {
         var src = sfxSource != null ? sfxSource : musicSource;
@@ -81,9 +71,6 @@ public class AudioManager : MonoBehaviour
         src.loop = false;
         src.clip = null;
     }
-
-    public void PlayWallHit() => PlaySfx(sfxWallHit);
-    public void PlayDeath()   => PlaySfx(sfxDeath);
 
     void PlayStartSceneLoop()
     {
