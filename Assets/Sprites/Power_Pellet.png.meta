@@ -121,19 +121,19 @@ TextureImporter:
       name: Power_Pellet_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 307
-        width: 22
-        height: 26
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d55de5d656f4a23e0800000000000000
-      internalID: -2077760981032839843
+      spriteID: c84cc64b3986a483cabb48331c5067e6
+      internalID: -1654888222
       vertices: []
       indices: 
       edges: []
@@ -142,19 +142,19 @@ TextureImporter:
       name: Power_Pellet_1
       rect:
         serializedVersion: 2
-        x: 183
-        y: 307
-        width: 22
-        height: 26
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c2c552e1f07514400800000000000000
-      internalID: 306621972079795244
+      spriteID: 3b1ddc55e893c41d9baf3423428a606f
+      internalID: 770665320
       vertices: []
       indices: 
       edges: []
@@ -163,19 +163,19 @@ TextureImporter:
       name: Power_Pellet_2
       rect:
         serializedVersion: 2
-        x: 311
-        y: 307
-        width: 22
-        height: 26
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f4fa678580ef34620800000000000000
-      internalID: 2757326708678242127
+      spriteID: 3ec7efac136b24051ac296e08f02a154
+      internalID: -1167161877
       vertices: []
       indices: 
       edges: []
@@ -184,19 +184,19 @@ TextureImporter:
       name: Power_Pellet_3
       rect:
         serializedVersion: 2
-        x: 55
-        y: 179
-        width: 22
-        height: 26
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3e63bb2fa1d331d20800000000000000
-      internalID: 3248006942215059171
+      spriteID: e6d86fef8af334b70b795dca20724ea8
+      internalID: -447410020
       vertices: []
       indices: 
       edges: []
@@ -205,19 +205,19 @@ TextureImporter:
       name: Power_Pellet_4
       rect:
         serializedVersion: 2
-        x: 183
-        y: 179
-        width: 22
-        height: 26
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b732e754f63a1ca80800000000000000
-      internalID: -8448291727667747973
+      spriteID: 299dfd076b1794dc1a1d7f3d96b4add4
+      internalID: 625041344
       vertices: []
       indices: 
       edges: []
@@ -226,19 +226,19 @@ TextureImporter:
       name: Power_Pellet_5
       rect:
         serializedVersion: 2
-        x: 311
-        y: 179
-        width: 22
-        height: 26
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c43836edd1eb643e0800000000000000
-      internalID: -2069757943235771572
+      spriteID: c22fbb468243742079184e1e2b9bf194
+      internalID: 1545669189
       vertices: []
       indices: 
       edges: []
@@ -247,19 +247,19 @@ TextureImporter:
       name: Power_Pellet_6
       rect:
         serializedVersion: 2
-        x: 55
-        y: 51
-        width: 22
-        height: 26
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 58a51ebbb3ea58d40800000000000000
-      internalID: 5586062484401379973
+      spriteID: eaf4ae31d4e0249bbb25180bcc23dc52
+      internalID: 280594264
       vertices: []
       indices: 
       edges: []
@@ -267,14 +267,21 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c03a7b47d06984c12bbf7b4f65894109
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Power_Pellet_0: -1654888222
+      Power_Pellet_1: 770665320
+      Power_Pellet_2: -1167161877
+      Power_Pellet_3: -447410020
+      Power_Pellet_4: 625041344
+      Power_Pellet_5: 1545669189
+      Power_Pellet_6: 280594264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

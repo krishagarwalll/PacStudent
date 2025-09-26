@@ -103,19 +103,19 @@ TextureImporter:
       name: Normal_Pellet_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 59
-        width: 10
-        height: 10
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9bd06f2e153126d10800000000000000
-      internalID: 2117276017238609337
+      spriteID: fe12eb5d78abe46b4a98c6d919a69432
+      internalID: -2072944607
       vertices: []
       indices: 
       edges: []
@@ -123,14 +123,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0a5a1f7f392f3456ea91f0f019bd3107
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Normal_Pellet_0: -2072944607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

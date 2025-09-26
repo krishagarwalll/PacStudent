@@ -130,19 +130,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 415
-        width: 78
-        height: 66
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1e34f6afc8073b8b0800000000000000
-      internalID: -5137638999100275743
+      spriteID: a56afd21e389e4fe188d321459b9d68c
+      internalID: 247224844
       vertices: []
       indices: 
       edges: []
@@ -151,19 +151,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_1
       rect:
         serializedVersion: 2
-        x: 155
-        y: 415
-        width: 78
-        height: 66
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: efbc6eb3361b32630800000000000000
-      internalID: 3901156741997841406
+      spriteID: fbc8e4986475843cb82979460b467899
+      internalID: 1819430146
       vertices: []
       indices: 
       edges: []
@@ -172,19 +172,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_2
       rect:
         serializedVersion: 2
-        x: 283
-        y: 415
-        width: 78
-        height: 66
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e4475474a43c34300800000000000000
-      internalID: 235246329344128078
+      spriteID: ee115954ed8af457ca389f5eb1f9acd2
+      internalID: -185558865
       vertices: []
       indices: 
       edges: []
@@ -193,19 +193,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_3
       rect:
         serializedVersion: 2
-        x: 27
-        y: 287
-        width: 78
-        height: 66
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1a0507e309a4f0910800000000000000
-      internalID: 1805743958982152353
+      spriteID: ac4bd666e6b8b4fccb7e657bf2dcead9
+      internalID: 560237231
       vertices: []
       indices: 
       edges: []
@@ -214,19 +214,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_4
       rect:
         serializedVersion: 2
-        x: 155
-        y: 287
-        width: 78
-        height: 66
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e5c793d8be269c290800000000000000
-      internalID: -7869650110027039650
+      spriteID: 9032fcb972dd9402a99ae5c9493be875
+      internalID: 171078372
       vertices: []
       indices: 
       edges: []
@@ -235,19 +235,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_5
       rect:
         serializedVersion: 2
-        x: 283
-        y: 287
-        width: 78
-        height: 66
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fe2cbc28d393683d0800000000000000
-      internalID: -3204811148477349137
+      spriteID: ce160981ed2bd4f9ea929c5c0da7bbc8
+      internalID: -1958835500
       vertices: []
       indices: 
       edges: []
@@ -256,19 +256,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_6
       rect:
         serializedVersion: 2
-        x: 27
-        y: 159
-        width: 78
-        height: 66
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 20f5e12ef0b297f20800000000000000
-      internalID: 3420812739182747394
+      spriteID: 04563bbed62924f1d92c52550081702a
+      internalID: -123881660
       vertices: []
       indices: 
       edges: []
@@ -277,19 +277,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_7
       rect:
         serializedVersion: 2
-        x: 155
-        y: 159
-        width: 78
-        height: 66
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 76544bd8bd7bb6f80800000000000000
-      internalID: -8112188150174694041
+      spriteID: c8296487f10154512bf771d62780dccb
+      internalID: 277486819
       vertices: []
       indices: 
       edges: []
@@ -298,19 +298,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_8
       rect:
         serializedVersion: 2
-        x: 283
-        y: 159
-        width: 78
-        height: 66
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a39b23ea4ad12f070800000000000000
-      internalID: 8138600069746309434
+      spriteID: 7e066254f3cd046daaa392a456ee95d7
+      internalID: -914914973
       vertices: []
       indices: 
       edges: []
@@ -319,19 +319,19 @@ TextureImporter:
       name: Bonus_Score_Cheese_9
       rect:
         serializedVersion: 2
-        x: 27
-        y: 31
-        width: 78
-        height: 66
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 10e8a98e20062ca30800000000000000
-      internalID: 4234052165290331649
+      spriteID: 8b3d3a62ae59440a5b2954cbec232113
+      internalID: -611463683
       vertices: []
       indices: 
       edges: []
@@ -339,14 +339,24 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1c56fa0fe33154c31805710f2c09d7d4
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bonus_Score_Cheese_0: 247224844
+      Bonus_Score_Cheese_1: 1819430146
+      Bonus_Score_Cheese_2: -185558865
+      Bonus_Score_Cheese_3: 560237231
+      Bonus_Score_Cheese_4: 171078372
+      Bonus_Score_Cheese_5: -1958835500
+      Bonus_Score_Cheese_6: -123881660
+      Bonus_Score_Cheese_7: 277486819
+      Bonus_Score_Cheese_8: -914914973
+      Bonus_Score_Cheese_9: -611463683
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

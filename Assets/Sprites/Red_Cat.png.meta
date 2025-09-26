@@ -145,19 +145,19 @@ TextureImporter:
       name: Red_Cat_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 423
-        width: 70
-        height: 50
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e88ab7c932ef67a30800000000000000
-      internalID: 4212833930354337934
+      spriteID: 0748dffe0e0764b749bbefb6eaf8a4c4
+      internalID: 1183205658
       vertices: []
       indices: 
       edges: []
@@ -166,19 +166,19 @@ TextureImporter:
       name: Red_Cat_1
       rect:
         serializedVersion: 2
-        x: 155
-        y: 423
-        width: 74
-        height: 54
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a457148e0d8dba520800000000000000
-      internalID: 2714501592182256970
+      spriteID: 8ccc53ce4ae2d4dfebad66eb88eff0e8
+      internalID: 106811570
       vertices: []
       indices: 
       edges: []
@@ -187,19 +187,19 @@ TextureImporter:
       name: Red_Cat_2
       rect:
         serializedVersion: 2
-        x: 283
-        y: 423
-        width: 70
-        height: 54
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 26101298061e782e0800000000000000
-      internalID: -2123480894548147870
+      spriteID: cc1164dfcad9a40529cc47b4103913c3
+      internalID: -1811964869
       vertices: []
       indices: 
       edges: []
@@ -208,19 +208,19 @@ TextureImporter:
       name: Red_Cat_3
       rect:
         serializedVersion: 2
-        x: 415
-        y: 423
-        width: 70
-        height: 50
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 250cb168b983c90a0800000000000000
-      internalID: -6873556690653167534
+      spriteID: f50e48cfabe5a4397a4320b9853e21ea
+      internalID: 1803527698
       vertices: []
       indices: 
       edges: []
@@ -229,19 +229,19 @@ TextureImporter:
       name: Red_Cat_4
       rect:
         serializedVersion: 2
-        x: 27
-        y: 295
-        width: 74
-        height: 54
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 244e22b1b02eefb50800000000000000
-      internalID: 6628984238863737922
+      spriteID: 69943a9b07d764f079ee831311328951
+      internalID: 322820124
       vertices: []
       indices: 
       edges: []
@@ -250,19 +250,19 @@ TextureImporter:
       name: Red_Cat_5
       rect:
         serializedVersion: 2
-        x: 159
-        y: 295
-        width: 70
-        height: 54
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cf3ba6f3260d62ba0800000000000000
-      internalID: -6113970323719539716
+      spriteID: 11677f07b5b294a468c4ef2dedefab43
+      internalID: -520991498
       vertices: []
       indices: 
       edges: []
@@ -271,19 +271,19 @@ TextureImporter:
       name: Red_Cat_6
       rect:
         serializedVersion: 2
-        x: 291
-        y: 259
-        width: 54
-        height: 122
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 401292e61f71d7040800000000000000
-      internalID: 4646896716218966276
+      spriteID: f450b8a122d3e4d76b381651df70ebc6
+      internalID: 335026722
       vertices: []
       indices: 
       edges: []
@@ -292,19 +292,19 @@ TextureImporter:
       name: Red_Cat_7
       rect:
         serializedVersion: 2
-        x: 419
-        y: 259
-        width: 54
-        height: 122
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7271cc2047a9c94a0800000000000000
-      internalID: -6585218732068694233
+      spriteID: 7a89fe3b775dd4debaa830b390883ddf
+      internalID: 2016055746
       vertices: []
       indices: 
       edges: []
@@ -313,19 +313,19 @@ TextureImporter:
       name: Red_Cat_8
       rect:
         serializedVersion: 2
-        x: 35
-        y: 131
-        width: 54
-        height: 122
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9522dfcfc6cd1c230800000000000000
-      internalID: 3657446733060579929
+      spriteID: cf256785dd2c146aeb59236fa5ab9da3
+      internalID: -1852561571
       vertices: []
       indices: 
       edges: []
@@ -334,19 +334,19 @@ TextureImporter:
       name: Red_Cat_9
       rect:
         serializedVersion: 2
-        x: 167
-        y: 131
-        width: 54
-        height: 122
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 19966c52e0dbf7ed0800000000000000
-      internalID: -2414003006786344559
+      spriteID: e18024efb27024681816dd2b2b160475
+      internalID: -1654882406
       vertices: []
       indices: 
       edges: []
@@ -355,19 +355,19 @@ TextureImporter:
       name: Red_Cat_10
       rect:
         serializedVersion: 2
-        x: 295
-        y: 131
-        width: 54
-        height: 122
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 81e9e24e9bba30d70800000000000000
-      internalID: 9008232494556683800
+      spriteID: f0e079097e6df4761976d7c59407e3e4
+      internalID: -70265912
       vertices: []
       indices: 
       edges: []
@@ -376,19 +376,19 @@ TextureImporter:
       name: Red_Cat_11
       rect:
         serializedVersion: 2
-        x: 423
-        y: 131
-        width: 54
-        height: 122
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b2a268e5f7a1fce80800000000000000
-      internalID: -8156271265795659221
+      spriteID: f13915bf910fe451999170ac4aace3fb
+      internalID: 951745147
       vertices: []
       indices: 
       edges: []
@@ -397,19 +397,19 @@ TextureImporter:
       name: Red_Cat_12
       rect:
         serializedVersion: 2
-        x: 23
-        y: 47
-        width: 78
-        height: 42
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a922e81dab0a2dc60800000000000000
-      internalID: 7841506625445569178
+      spriteID: 8e4b3bf706b714623812d0e3099407de
+      internalID: 1402923935
       vertices: []
       indices: 
       edges: []
@@ -418,19 +418,19 @@ TextureImporter:
       name: Red_Cat_13
       rect:
         serializedVersion: 2
-        x: 147
-        y: 43
-        width: 82
-        height: 46
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 49cb391a2ee4b0ed0800000000000000
-      internalID: -2446775237265343340
+      spriteID: 02edaac527b1c46049210f24b039658d
+      internalID: -1993145299
       vertices: []
       indices: 
       edges: []
@@ -439,19 +439,19 @@ TextureImporter:
       name: Red_Cat_14
       rect:
         serializedVersion: 2
-        x: 271
-        y: 39
-        width: 86
-        height: 50
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fba5decf6e0cf0910800000000000000
-      internalID: 1805874073917283007
+      spriteID: 67b33b3b907a84bb5bcc657ff1dd5c32
+      internalID: 714824377
       vertices: []
       indices: 
       edges: []
@@ -459,14 +459,29 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 793cb52236fa04a1e9bd38fea96712d9
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Red_Cat_0: 1183205658
+      Red_Cat_1: 106811570
+      Red_Cat_10: -70265912
+      Red_Cat_11: 951745147
+      Red_Cat_12: 1402923935
+      Red_Cat_13: -1993145299
+      Red_Cat_14: 714824377
+      Red_Cat_2: -1811964869
+      Red_Cat_3: 1803527698
+      Red_Cat_4: 322820124
+      Red_Cat_5: -520991498
+      Red_Cat_6: 335026722
+      Red_Cat_7: 2016055746
+      Red_Cat_8: -1852561571
+      Red_Cat_9: -1654882406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

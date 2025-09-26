@@ -109,19 +109,19 @@ TextureImporter:
       name: Cat_Death_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 175
-        width: 78
-        height: 42
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1f5843eabad299de0800000000000000
-      internalID: -1325978399898565135
+      spriteID: 692505d50949a4803af44ea6c38c06b6
+      internalID: -22342483
       vertices: []
       indices: 
       edges: []
@@ -130,19 +130,19 @@ TextureImporter:
       name: Cat_Death_1
       rect:
         serializedVersion: 2
-        x: 147
-        y: 171
-        width: 82
-        height: 46
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2578c305553fc4940800000000000000
-      internalID: 5281864010742662994
+      spriteID: 56869c7f805b34d52bcad31da20e89d7
+      internalID: 909813201
       vertices: []
       indices: 
       edges: []
@@ -151,19 +151,19 @@ TextureImporter:
       name: Cat_Death_2
       rect:
         serializedVersion: 2
-        x: 15
-        y: 39
-        width: 86
-        height: 50
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d0edeb874ccf18aa0800000000000000
-      internalID: -6160364894496563699
+      spriteID: c360677a1965f42e79e0318a62db82d0
+      internalID: -955681232
       vertices: []
       indices: 
       edges: []
@@ -171,14 +171,17 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: eea57ed26b47b4decb63c0547c903c61
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cat_Death_0: -22342483
+      Cat_Death_1: 909813201
+      Cat_Death_2: -955681232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

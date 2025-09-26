@@ -136,19 +136,19 @@ TextureImporter:
       name: Cat_Scared_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 423
-        width: 70
-        height: 50
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5658bf6f4106ca760800000000000000
-      internalID: 7470451525060101477
+      spriteID: c3c63fe726d634005a63603e83cf3536
+      internalID: 1542265647
       vertices: []
       indices: 
       edges: []
@@ -157,19 +157,19 @@ TextureImporter:
       name: Cat_Scared_1
       rect:
         serializedVersion: 2
-        x: 155
-        y: 423
-        width: 74
-        height: 54
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 49d58b188483fa4f0800000000000000
-      internalID: -815371123465626220
+      spriteID: c3d88d02f2c574eca9b3f79f141870f4
+      internalID: -567431944
       vertices: []
       indices: 
       edges: []
@@ -178,19 +178,19 @@ TextureImporter:
       name: Cat_Scared_2
       rect:
         serializedVersion: 2
-        x: 287
-        y: 423
-        width: 70
-        height: 54
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 577b31d475da43ed0800000000000000
-      internalID: -2435130908033697931
+      spriteID: aab820c72ba71495f93e5e657e43afec
+      internalID: 757444964
       vertices: []
       indices: 
       edges: []
@@ -199,19 +199,19 @@ TextureImporter:
       name: Cat_Scared_3
       rect:
         serializedVersion: 2
-        x: 27
-        y: 295
-        width: 70
-        height: 50
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3915e9d676a3fffd0800000000000000
-      internalID: -2306060268295269997
+      spriteID: 295570cfc1ab245a4a5be82eec1121f9
+      internalID: -88735652
       vertices: []
       indices: 
       edges: []
@@ -220,19 +220,19 @@ TextureImporter:
       name: Cat_Scared_4
       rect:
         serializedVersion: 2
-        x: 155
-        y: 295
-        width: 74
-        height: 54
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 374227b2e38cbe5b0800000000000000
-      internalID: -5337952763975162765
+      spriteID: f9a14592bc627468db8eb31b3d8ecdbc
+      internalID: 706758482
       vertices: []
       indices: 
       edges: []
@@ -241,19 +241,19 @@ TextureImporter:
       name: Cat_Scared_5
       rect:
         serializedVersion: 2
-        x: 283
-        y: 295
-        width: 70
-        height: 54
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 17e9fc5babe0b61d0800000000000000
-      internalID: -3356572902197584271
+      spriteID: ab5d41e733f0d433b92bcf213dcbdeba
+      internalID: 168436109
       vertices: []
       indices: 
       edges: []
@@ -262,19 +262,19 @@ TextureImporter:
       name: Cat_Scared_6
       rect:
         serializedVersion: 2
-        x: 39
-        y: 131
-        width: 54
-        height: 122
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 440771ea3669c41c0800000000000000
-      internalID: -4518070971292749756
+      spriteID: 0635e0149820e4dd8ac99002464d6421
+      internalID: 416203965
       vertices: []
       indices: 
       edges: []
@@ -283,19 +283,19 @@ TextureImporter:
       name: Cat_Scared_7
       rect:
         serializedVersion: 2
-        x: 167
-        y: 131
-        width: 54
-        height: 122
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4a92ab53c2472b620800000000000000
-      internalID: 2788418852524534180
+      spriteID: dbc848ac3290c4a84ae7a3516ad5f202
+      internalID: 1297753592
       vertices: []
       indices: 
       edges: []
@@ -304,19 +304,19 @@ TextureImporter:
       name: Cat_Scared_8
       rect:
         serializedVersion: 2
-        x: 295
-        y: 131
-        width: 54
-        height: 122
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 62d4381bab8d976c0800000000000000
-      internalID: -4145043685664142042
+      spriteID: cb57dd2f9cb074137b7999ae36160eff
+      internalID: 1270779485
       vertices: []
       indices: 
       edges: []
@@ -325,19 +325,19 @@ TextureImporter:
       name: Cat_Scared_9
       rect:
         serializedVersion: 2
-        x: 35
-        y: 3
-        width: 54
-        height: 122
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cb6545e629a88df40800000000000000
-      internalID: 5753500885486687932
+      spriteID: effd584752d0c415ca27b5a256fd19aa
+      internalID: 90226858
       vertices: []
       indices: 
       edges: []
@@ -346,19 +346,19 @@ TextureImporter:
       name: Cat_Scared_10
       rect:
         serializedVersion: 2
-        x: 163
-        y: 3
-        width: 54
-        height: 122
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8498a620ddad42f40800000000000000
-      internalID: 5702923670921054536
+      spriteID: 32ef73813207741d88b23e8894726ac4
+      internalID: 1354554021
       vertices: []
       indices: 
       edges: []
@@ -367,19 +367,19 @@ TextureImporter:
       name: Cat_Scared_11
       rect:
         serializedVersion: 2
-        x: 291
-        y: 3
-        width: 54
-        height: 122
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dac9fc49961274340800000000000000
-      internalID: 4847880261239545005
+      spriteID: 2d89540bf6de94e46a1c4ff1a06869cd
+      internalID: -479364495
       vertices: []
       indices: 
       edges: []
@@ -387,14 +387,26 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0eefa6ce3bf0b468ab38cefd52f4857b
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cat_Scared_0: 1542265647
+      Cat_Scared_1: -567431944
+      Cat_Scared_10: 1354554021
+      Cat_Scared_11: -479364495
+      Cat_Scared_2: 757444964
+      Cat_Scared_3: -88735652
+      Cat_Scared_4: 706758482
+      Cat_Scared_5: 168436109
+      Cat_Scared_6: 416203965
+      Cat_Scared_7: 1297753592
+      Cat_Scared_8: 1270779485
+      Cat_Scared_9: 90226858
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
