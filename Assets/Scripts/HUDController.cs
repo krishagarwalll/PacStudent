@@ -26,19 +26,15 @@ public class HUDController : MonoBehaviour
 
     void Start()
     {
-        // Initialize UI
         UpdateScore(0);
         UpdateTimer(0f);
         HideGhostScaredTimer();
         UpdateLivesDisplay(3);
-        
-        // REMOVED: StartTimer() - GameManager will call this after countdown
-        // Timer stays at 00:00:00 during countdown
     }
 
     void Update()
     {
-        // Update game timer (only runs when isTimerRunning = true)
+        // Update game timer
         if (isTimerRunning)
         {
             gameTime += Time.deltaTime;
@@ -63,7 +59,7 @@ public class HUDController : MonoBehaviour
     
     public static string FormatScore(int score)
     {
-        return score.ToString("D6"); // D6 = Decimal with 6 digits, zero-padded
+        return score.ToString("D6");
     }
 
     public static string FormatTime(float timeInSeconds)
@@ -138,8 +134,7 @@ public class HUDController : MonoBehaviour
         currentLives = lives;
         
         if (livesImage == null) return;
-
-        // Change sprite based on lives remaining
+        
         switch (currentLives)
         {
             case 3:

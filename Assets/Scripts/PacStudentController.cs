@@ -13,7 +13,7 @@ public class PacStudentController : MonoBehaviour
     [SerializeField] Tilemap ghostWallTilemap;
 
     [Header("Movement")]
-    [SerializeField] float tilesPerSecond = 8f;
+    [SerializeField] float tilesPerSecond = 3f;
     [SerializeField] Tweener tweener;
 
     [Header("Animation")]
@@ -129,7 +129,7 @@ public class PacStudentController : MonoBehaviour
         {
             if (GameManager.I == null) return;
 
-            // Check if ghost is scared/recovering (can be eaten)
+            // Check if ghost is scared/recovering
             if (GameManager.I.IsScaredActive)
             {
                 // Try to get the ghost's index
@@ -146,8 +146,7 @@ public class PacStudentController : MonoBehaviour
             }
         }
     }
-
-    // -------- Public API --------
+    
     public bool CanTeleport() => Time.time >= teleportCoolUntil;
 
     public void TeleportTo(Vector3 worldPos)
@@ -193,7 +192,6 @@ public class PacStudentController : MonoBehaviour
         SetAnimMoving(false);
     }
 
-    // -------- Helpers --------
     bool Walkable(Vector3Int cellOnWalkable)
     {
         if (HasTileAligned(wallTilemap, cellOnWalkable)) return false;

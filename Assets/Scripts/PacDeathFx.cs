@@ -13,8 +13,7 @@ public class PacDeathFX : MonoBehaviour
         if (!fxPrefab) return;
 
         var fx = Instantiate(fxPrefab, transform.position, Quaternion.identity);
-
-        // If the prefab isn't set to auto-destroy, clean it up safely.
+        
         var main = fx.main;
         bool willAutoDestroy =
             main.stopAction == ParticleSystemStopAction.Destroy ||

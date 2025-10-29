@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager I;
 
-    [Header("HUD (uses your HUDController)")]
+    [Header("HUD")]
     public HUDController hud;
 
     [Header("Audio")]
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     public float scaredDuration = 10f;
     public float ghostRespawnTime = 3f;
 
-    [Header("Death / Respawn")]
+    [Header("Death and Respawn")]
     public int startingLives = 3;
     public PacStudentController pacStudent;
     public Transform pacStart;
@@ -32,11 +32,11 @@ public class GameManager : MonoBehaviour
     public float deathAnimDuration = 1.2f;
     public GhostStateController ghostStateCtrl;
 
-    [Header("Round Start UI")]
+    [Header("Countdown UI")]
     public GameObject countdownPanel;
     public TMP_Text countdownText;
 
-    [Header("Game Over UI")]
+    [Header("Game over UI")]
     public GameObject gameOverPanel;
     public TMP_Text gameOverText;
 
@@ -91,20 +91,16 @@ public class GameManager : MonoBehaviour
         }
         deadGhostCount = 0;
 
-        // Start countdown
         StartCoroutine(RoundStartCountdown());
     }
 
     void Update()
     {
-        // Only update if game has started and not over
         if (!gameStarted || gameOver) return;
 
-        // Update game timer
         gameTime += Time.deltaTime;
         if (hud) hud.UpdateTimer(gameTime);
 
-        // Update scared timer
         if (scaredLeft > 0f)
         {
             scaredLeft = Mathf.Max(0f, scaredLeft - Time.deltaTime);
@@ -131,35 +127,45 @@ public class GameManager : MonoBehaviour
 
         UpdateGhostRespawnTimers();
 
-        // Debug keys
         if (Input.GetKeyDown(KeyCode.K)) AddLife(+1);
         if (Input.GetKeyDown(KeyCode.L)) AddLife(-1);
     }
 
     IEnumerator RoundStartCountdown()
     {
-        // Disable movement
+        // disable player movement
         if (pacStudent) 
         {
             pacStudent.SetInputEnabled(false);
         }
+        
+        // disable ghost state controller
         if (ghostStateCtrl) 
         {
             ghostStateCtrl.enabled = false;
         }
-
-        // Check if references exist
+        
+        // disable all ghost movement
+        GhostController[] allGhosts = FindObjectsByType<GhostController>(FindObjectsSortMode.None);
+        foreach (var gc in allGhosts)
+        {
+            if (gc) gc.DisableMovement();
+        }
+        
         if (countdownPanel == null)
         {
             gameStarted = true;
             if (pacStudent) pacStudent.SetInputEnabled(true);
             if (ghostStateCtrl) ghostStateCtrl.enabled = true;
+            foreach (var gc in allGhosts)
+            {
+                if (gc) gc.EnableMovement();
+            }
             yield break;
         }
         
         countdownPanel.SetActive(true);
 
-        // Show countdown: 3, 2, 1, GO!
         string[] numbers = { "3", "2", "1", "GO!" };
         foreach (string num in numbers)
         {
@@ -170,15 +176,19 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
         }
 
-        // Extra second for GO!
         yield return new WaitForSeconds(1f);
         countdownPanel.SetActive(false);
 
-        // Start game
         gameStarted = true;
         if (pacStudent) pacStudent.SetInputEnabled(true);
         if (ghostStateCtrl) ghostStateCtrl.enabled = true;
         if (hud) hud.StartTimer();
+        
+        // enable all ghost movement after countdown
+        foreach (var gc in allGhosts)
+        {
+            if (gc) gc.EnableMovement();
+        }
     }
 
     void UpdateGhostRespawnTimers()
@@ -197,7 +207,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ---------- scoring ----------
     public void AddPellet()   
     { 
         AddScore(pelletScore);
@@ -220,7 +229,6 @@ public class GameManager : MonoBehaviour
         if (hud) hud.UpdateScore(score);
     }
 
-    // ---------- scared ----------
     public void StartScared(float duration)
     {
         scaredLeft = duration;
@@ -235,7 +243,6 @@ public class GameManager : MonoBehaviour
         OnGhostScaredStart?.Invoke(duration);
     }
 
-    // ---------- ghost death ----------
     public void GhostEaten(int ghostIndex)
     {
         if (ghostIndex < 0 || ghostIndex >= 4) return;
@@ -263,11 +270,11 @@ public class GameManager : MonoBehaviour
         
         if (scaredLeft > 3f)
         {
-            newState = 1; // Scared
+            newState = 1;
         }
         else if (scaredLeft > 0f)
         {
-            newState = 2; // Recovering
+            newState = 2;
         }
 
         if (ghostStateCtrl) ghostStateCtrl.ReviveGhost(ghostIndex, newState);
@@ -296,7 +303,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ---------- player death / respawn ----------
     bool deathRunning;
     public void PlayerDied()
     {
@@ -328,7 +334,6 @@ public class GameManager : MonoBehaviour
 
         AddLife(-1);
 
-        // Game over ONLY if lives = 0
         if (lives <= 0)
         {
             StartCoroutine(GameOverRoutine());
@@ -366,12 +371,10 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
 
-        // Stop all movement
         if (pacStudent) pacStudent.SetInputEnabled(false);
         if (ghostStateCtrl) ghostStateCtrl.enabled = false;
         FreezeGhostAnimators(true);
-
-        // Check if references exist
+        
         if (gameOverPanel == null)
         {
             yield return new WaitForSeconds(3f);
@@ -379,17 +382,13 @@ public class GameManager : MonoBehaviour
             yield break;
         }
 
-        // Show Game Over panel
         gameOverPanel.SetActive(true);
         if (gameOverText) gameOverText.text = "GAME OVER";
 
-        // Save high score
         SaveHighScore();
-
-        // Wait 3 seconds
+        
         yield return new WaitForSeconds(3f);
-
-        // Return to start scene
+        
         SceneManager.LoadScene(0);
     }
 

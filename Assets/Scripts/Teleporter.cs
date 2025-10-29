@@ -16,7 +16,7 @@ public class Teleporter : MonoBehaviour
         if (!exit) return;
         var ps = other.GetComponent<PacStudentController>();
         if (!ps) return;
-        if (!ps.CanTeleport()) return;                 // cooldown guard to prevent ping-pong
+        if (!ps.CanTeleport()) return; // cooldown
         ps.TeleportTo(exit.position);
     }
 }

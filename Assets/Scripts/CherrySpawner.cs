@@ -5,11 +5,11 @@ public class CherrySpawner : MonoBehaviour
 {
     public BoxCollider2D levelBounds;
     public GameObject cherryPrefab;
-    public SpriteMask levelMask;           // assign if you want "visible only inside" masking
-    public float speed = 3f;               // ← change this to make the cherry slower/faster
+    public SpriteMask levelMask;
+    public float speed = 3f;
     public float edgeMargin = 0.5f;
     public float respawnDelay = 5f;
-    public int sortingOrder = 999;         // ensure it draws on top
+    public int sortingOrder = 999;
 
     GameObject current;
 
@@ -17,14 +17,14 @@ public class CherrySpawner : MonoBehaviour
 
     IEnumerator Loop()
     {
-        // First spawn: wait 10s (countdown ~5s + delay 5s = spawns 5s after game starts)
+        // First spawn  10s then 5
         yield return new WaitForSeconds(respawnDelay * 2f);
         
         while (true)
         {
             Spawn();
             while (current != null) yield return null;
-            // Subsequent spawns: wait only 5s after destroyed
+            // next spawn after 5s
             yield return new WaitForSeconds(respawnDelay);
         }
     }

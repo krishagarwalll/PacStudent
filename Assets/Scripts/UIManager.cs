@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
 
     void LoadAndDisplayHighScores()
     {
-        // Level 1 (Scene index 1)
+        // Level 1
         int score1 = PlayerPrefs.GetInt("Level1_HighScore", 0);
         float time1 = PlayerPrefs.GetFloat("Level1_BestTime", 0f);
         
@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour
         if (bestTimeText1)
             bestTimeText1.text = $"BEST TIME\n{FormatTime(time1)}";
         
-        // Level 2 (Scene index 2 - if it exists)
+        // Level 2 (set to level1)
         int score2 = PlayerPrefs.GetInt("Level2_HighScore", 0);
         float time2 = PlayerPrefs.GetFloat("Level2_BestTime", 0f);
         
@@ -51,31 +51,23 @@ public class UIManager : MonoBehaviour
         return $"{minutes:D2}:{seconds:D2}:{centiseconds:D2}";
     }
 
-    // Load Level 1 - PacStudent scene (index 1)
     public void LoadLevel1()
     {
         SceneManager.LoadScene(1);
     }
 
-    // Load Level 2 - Innovation scene (index 2 - add to build settings when ready)
     public void LoadLevel2()
     {
         SceneManager.LoadScene(1);
     }
 
-    // Alternative: Load by scene name
-    public void LoadSceneByName(string sceneName)
+    public void LoadMainMenu()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(0);   
     }
-
-    // Quit the game
+    
     public void QuitGame()
     {
-#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
     }
 }

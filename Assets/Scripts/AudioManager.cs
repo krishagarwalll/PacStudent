@@ -59,8 +59,7 @@ public class AudioManager : MonoBehaviour
             PlayLoop(bgmNormal);
         }
     }
-
-    // Public API used by gameplay
+    
     public void StartMoveLoop(bool aboutToEat)
     {
         var src = sfxSource ? sfxSource : musicSource;
@@ -90,8 +89,7 @@ public class AudioManager : MonoBehaviour
     public void PlayNormalLoop()    { PlayLoop(bgmNormal); }
     public void PlayScaredLoop()    { PlayLoop(bgmScared); }
     public void PlayDeadGhostLoop() { PlayLoop(bgmDeadGhost); }
-
-    // Internals
+    
     AudioSource EnsureOneShot()
     {
         if (oneShot) return oneShot;

@@ -6,7 +6,7 @@ public class GhostStateController : MonoBehaviour
     [Tooltip("Assign all 4 ghost Animators.")]
     public Animator[] ghosts;
 
-    [Header("Animator state names (must match your controller)")]
+    [Header("Animator state names")]
     public string walkingState    = "Walking";
     public string scaredState     = "Scared";
     public string recoveringState = "Recovering";
@@ -44,9 +44,9 @@ public class GhostStateController : MonoBehaviour
         subscribed = false;
     }
 
-    void HandleScared(float _)  => SetAll(1, scaredState);       // Scared now
-    void HandleRecovering()     => SetAll(2, recoveringState);   // last 3s
-    void HandleNormal()         => SetAll(0, walkingState);      // back to normal
+    void HandleScared(float _) => SetAll(1, scaredState);
+    void HandleRecovering() => SetAll(2, recoveringState);// last 3s
+    void HandleNormal()  => SetAll(0, walkingState);// back to normal
 
     void SetAll(int state, string stateName)
     {
@@ -56,15 +56,14 @@ public class GhostStateController : MonoBehaviour
             var a = ghosts[i];
             if (!a) continue;
             
-            // Don't change state if ghost is dead (State 3)
+            // doesn't change state if ghost is dead
             if (a.GetInteger("GhostState") == 3) continue;
             
             a.SetInteger("GhostState", state);
             a.CrossFade(stateName, 0f, 0, 0f);
         }
     }
-
-    // Call this when a specific ghost dies
+    
     public void SetGhostDead(int ghostIndex)
     {
         if (ghosts == null || ghostIndex < 0 || ghostIndex >= ghosts.Length) return;
@@ -75,7 +74,6 @@ public class GhostStateController : MonoBehaviour
         a.CrossFade(deadState, 0f, 0, 0f);
     }
 
-    // Call this to revive a specific ghost to a specific state
     public void ReviveGhost(int ghostIndex, int newState)
     {
         if (ghosts == null || ghostIndex < 0 || ghostIndex >= ghosts.Length) return;
@@ -93,8 +91,7 @@ public class GhostStateController : MonoBehaviour
         a.SetInteger("GhostState", newState);
         a.CrossFade(stateName, 0f, 0, 0f);
     }
-
-    // Get the current state of a ghost
+    
     public int GetGhostState(int ghostIndex)
     {
         if (ghosts == null || ghostIndex < 0 || ghostIndex >= ghosts.Length) return 0;

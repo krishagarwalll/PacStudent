@@ -11,8 +11,8 @@ public class DustTrail : MonoBehaviour
     [SerializeField] private float idleRate = 0f;
 
     [Header("Look")]
-    [SerializeField] private Transform followTarget; // PacStudent transform
-    [SerializeField] private float offsetBehind = 0.18f; // spawn slightly behind
+    [SerializeField] private Transform followTarget;
+    [SerializeField] private float offsetBehind = 0.18f; // spawn behind
     [SerializeField] private float trailVelocity = 0.75f; // particle push opposite direction
 
     ParticleSystem ps;
@@ -49,21 +49,20 @@ public class DustTrail : MonoBehaviour
         Vector2 v = Vector2.zero;
         switch (state)
         {
-            case 0: v = Vector2.right;  break; // Right
-            case 1: v = Vector2.down;   break; // Down
-            case 2: v = Vector2.left;   break; // Left
-            case 3: v = Vector2.up;     break; // Up
+            case 0: v = Vector2.right;  break; // right
+            case 1: v = Vector2.down;   break; // down
+            case 2: v = Vector2.left;   break; // left
+            case 3: v = Vector2.up;     break; // up
         }
 
-        // Position the emitter slightly behind the player
+        // slightly behind the player
         if (followTarget)
             transform.position = followTarget.position - (Vector3)(v * offsetBehind);
 
-        // Push particles opposite to movement for a trailing effect
+        // Push particles opposite to movement
         vol.x = -v.x * trailVelocity;
         vol.y = -v.y * trailVelocity;
-
-        // Change emission rate by movement state
+        
         emission.rateOverTime = moving ? movingRate : idleRate;
     }
 }
