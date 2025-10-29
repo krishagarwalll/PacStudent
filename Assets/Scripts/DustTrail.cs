@@ -1,9 +1,9 @@
 using UnityEngine;
 
 [RequireComponent(typeof(ParticleSystem))]
-public class DustTrailMinimal : MonoBehaviour
+public class DustTrail : MonoBehaviour
 {
-    [Header("PacStudent Animator (with IsMoving + Dir)")]
+    [Header("PacStudent Animator (with IsMoving + State)")]
     [SerializeField] private Animator pacAnimator;
 
     [Header("Emission Rates (particles/sec)")]
@@ -37,15 +37,22 @@ public class DustTrailMinimal : MonoBehaviour
         if (!pacAnimator) return;
 
         bool moving = pacAnimator.GetBool("IsMoving");
-        int dir = pacAnimator.GetInteger("Dir"); // 0=R,1=D,2=L,3=U
+        int state = pacAnimator.GetInteger("State"); // 0=R, 1=D, 2=L, 3=U, 4=Death
+
+        // Don't emit during death
+        if (state == 4)
+        {
+            emission.rateOverTime = 0f;
+            return;
+        }
 
         Vector2 v = Vector2.zero;
-        switch (dir)
+        switch (state)
         {
             case 0: v = Vector2.right;  break; // Right
             case 1: v = Vector2.down;   break; // Down
             case 2: v = Vector2.left;   break; // Left
-            default:v = Vector2.up;     break; // Up
+            case 3: v = Vector2.up;     break; // Up
         }
 
         // Position the emitter slightly behind the player
@@ -56,7 +63,7 @@ public class DustTrailMinimal : MonoBehaviour
         vol.x = -v.x * trailVelocity;
         vol.y = -v.y * trailVelocity;
 
-        // change emission rate by movement state
+        // Change emission rate by movement state
         emission.rateOverTime = moving ? movingRate : idleRate;
     }
 }

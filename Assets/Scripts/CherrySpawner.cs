@@ -17,11 +17,14 @@ public class CherrySpawner : MonoBehaviour
 
     IEnumerator Loop()
     {
-        yield return new WaitForSeconds(respawnDelay);
+        // First spawn: wait 10s (countdown ~5s + delay 5s = spawns 5s after game starts)
+        yield return new WaitForSeconds(respawnDelay * 2f);
+        
         while (true)
         {
             Spawn();
             while (current != null) yield return null;
+            // Subsequent spawns: wait only 5s after destroyed
             yield return new WaitForSeconds(respawnDelay);
         }
     }

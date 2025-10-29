@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,8 +15,13 @@ public class Tweener : MonoBehaviour
 
     public bool AddTween(Transform target, Vector3 startPos, Vector3 endPos, float duration)
     {
+        return AddTween(target, startPos, endPos, duration, null);
+    }
+
+    public bool AddTween(Transform target, Vector3 startPos, Vector3 endPos, float duration, Action onComplete)
+    {
         if (TweenExists(target)) return false;
-        queue.Add(new Tween(target, startPos, endPos, Time.time, duration));
+        queue.Add(new Tween(target, startPos, endPos, Time.time, duration, onComplete));
         return true;
     }
 
@@ -26,9 +32,11 @@ public class Tweener : MonoBehaviour
             var twn = queue[i];
             float u = Mathf.Clamp01((Time.time - twn.StartTime) / twn.Duration);
             twn.Target.position = Vector3.Lerp(twn.StartPos, twn.EndPos, u);
-            if (Vector3.SqrMagnitude(twn.Target.position - twn.EndPos) <= 0.000001f)
+
+            if ((twn.Target.position - twn.EndPos).sqrMagnitude <= 0.000001f)
             {
                 twn.Target.position = twn.EndPos;
+                twn.OnComplete?.Invoke();
                 queue.RemoveAt(i);
             }
         }

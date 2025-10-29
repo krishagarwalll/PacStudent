@@ -32,12 +32,13 @@ public class HUDController : MonoBehaviour
         HideGhostScaredTimer();
         UpdateLivesDisplay(3);
         
-        // Start timer automatically
-        StartTimer();
+        // REMOVED: StartTimer() - GameManager will call this after countdown
+        // Timer stays at 00:00:00 during countdown
     }
 
     void Update()
-    { // Update game timer
+    {
+        // Update game timer (only runs when isTimerRunning = true)
         if (isTimerRunning)
         {
             gameTime += Time.deltaTime;
